@@ -14,9 +14,11 @@ svg {
 }
 body {
   min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(to right top, #1d2f6f, #8390fa);
   color: #fff;
-  background: url('../assets/batman_bg.jpg') no-repeat;
+  background: url('../assets/bg.jpg')
+    no-repeat;
   background-size: cover;
 }
 .main-container {
@@ -104,6 +106,7 @@ ul {
   width: 12rem;
   gap: 1.5rem;
   justify-content: center;
+  border-radius: 1rem;
 }
 #hamburger-menu > div {
   height: 60px;
@@ -143,6 +146,9 @@ ul {
   * {
     font-size: 1.12vw;
   }
+  /* section {
+    margin: auto;
+  } */
   section .content h3 {
     margin: 0 20%;
   }

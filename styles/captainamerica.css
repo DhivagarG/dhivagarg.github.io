@@ -1,0 +1,9 @@
+body {
+  background: #333 url('../assets/captainamerica_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}

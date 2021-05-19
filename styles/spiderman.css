@@ -1,0 +1,9 @@
+body {
+  background: #333 url('../assets/spiderman_bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}

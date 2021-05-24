@@ -175,6 +175,9 @@ ul {
 .fs-7 a:hover {
   color: gold;
 }
+.gif{
+  height: 12rem;
+}
 
 /* Media Queries */
 

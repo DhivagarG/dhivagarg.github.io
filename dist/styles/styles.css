@@ -14,18 +14,18 @@ svg {
 }
 body {
   min-height: 100vh;
-  height: 100vh;
-  background: linear-gradient(to right top, #1d2f6f, #8390fa);
   color: #fff;
-  background: url('../assets/bg.jpg')
-    no-repeat;
+  background: url('../assets/bg.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
 .main-container {
   display: grid;
   font-weight: 600;
   font-size: 6rem;
   gap: 1rem;
+  grid-gap: 1rem;
 }
 h1 {
   font-size: 2rem;
@@ -49,8 +49,9 @@ section {
   flex-flow: column wrap;
   align-items: center;
   gap: 1rem;
-  margin: 2rem;
-  padding: 1rem;
+  grid-gap: 1rem;
+  margin: 0 2rem;
+  padding: 1rem 0;
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   background: linear-gradient(
@@ -66,6 +67,7 @@ section .content {
   flex-flow: column nowrap;
   text-align: center;
   gap: 0.7rem;
+  grid-gap: 0.7rem;
 }
 section .content h3 {
   margin: 0 5%;
@@ -77,26 +79,44 @@ img[alt='profile'] {
 #contact .icons {
   display: flex;
   gap: 1rem;
+  grid-gap: 1rem;
   min-height: 3rem;
 }
 .icons svg:hover {
   height: 36px;
   width: 36px;
   transition: 0.3s;
+  color: gold;
 }
 footer {
-  position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
+  position: fixed;
+  padding: 2.5rem 1.5rem;
+}
+.built-using {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  grid-gap: 1rem;
+}
+.built-using img {
+  height: 6rem;
 }
 ul {
   max-width: min-content;
 }
+#hamburger-icon {
+  height: 2rem;
+  cursor: pointer;
+}
 #hamburger-menu {
   display: none;
   position: absolute;
-  top: calc(1rem + 24px);
+  top: 3rem;
   background: white;
   z-index: 3;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
@@ -116,22 +136,46 @@ ul {
   cursor: pointer;
 }
 
-#hamburger-menu > div:first-child {
+#hamburger-menu [data-superhero='batman'] {
   background: url('../assets/batman1.png') no-repeat center center;
   background-size: cover;
 }
-#hamburger-menu > div:nth-child(2) {
+#hamburger-menu [data-superhero='superman'] {
   background: url('../assets/superman1.png') no-repeat center center;
   background-size: cover;
 }
-#hamburger-menu > div:nth-child(3) {
+#hamburger-menu [data-superhero='captainamerica'] {
   background: url('../assets/captainamerica.png') no-repeat center center;
   background-size: cover;
 }
-#hamburger-menu > div:nth-child(4) {
+#hamburger-menu [data-superhero='spiderman'] {
   background: url('../assets/spiderman1.png') no-repeat center center;
   background-size: cover;
 }
+.credits {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.fs-7 {
+  display: flex;
+  gap: 0.4rem;
+}
+.fs-7,
+.fs-7 a,
+.fs-7 span {
+  font-size: 0.75rem;
+}
+.fs-7 span {
+  font-weight: 400;
+}
+.fs-7 a {
+  cursor: pointer;
+}
+.fs-7 a:hover {
+  color: gold;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -146,10 +190,14 @@ ul {
   * {
     font-size: 1.12vw;
   }
-  /* section {
-    margin: auto;
-  } */
+  section {
+    margin: 0 12.5rem;
+  }
   section .content h3 {
     margin: 0 20%;
+  }
+  footer {
+    position: static;
+    margin-top: 1.5rem;
   }
 }

@@ -177,6 +177,7 @@ ul {
 }
 .gif{
   height: 12rem;
+  margin: -50px 0;
 }
 
 /* Media Queries */

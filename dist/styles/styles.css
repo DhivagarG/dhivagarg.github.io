@@ -205,3 +205,33 @@ ul {
     margin-top: 1.5rem;
   }
 }
+
+.project1{
+    align-items: flex-start;
+    float: left;
+    margin-top: 40px;
+    padding: 20px;
+    color: black;
+    background-color: white;
+}
+.project1 p{
+  font-size: 12px;
+  font-weight: 300;
+}
+.flex{
+  display:flex;
+}
+.pdT20{
+  padding-top: 20px;
+}
+.pdT10{
+  padding-top: 10px;
+}
+.language-none{
+  background: #f5f6f7!important;
+  font-family: Roboto Mono,monospace!important;
+  border-radius: 2px;
+  font-weight: normal;
+  overflow-x: auto;
+  width: 900px;
+}

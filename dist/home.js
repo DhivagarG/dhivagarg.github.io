@@ -27,8 +27,8 @@ const home  = `<header>
         <img src="./assets/dhivagar.gif" class="gif" />
     </div>
     <h3>
-        I am a front-end developer having experience with developing responsive web applications using HTML,
-        CSS, JavaScript and libaries/frameworks like React.js and Angular.
+        I am a full-stack developer having experience with developing responsive web applications using HTML,
+        CSS, JavaScript and libaries/frameworks like React.js, Angular, Springboot and cloud platforms like AWS, GCP, Azure.
     </h3>
     <h6>
         Here's how you can reach me

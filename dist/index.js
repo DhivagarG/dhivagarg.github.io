@@ -3,7 +3,7 @@
   //Routing
   const routes = {
     '/' : home,
-    '/project1' : project1
+    '/bodypix' : bodypix
   };
 
   const rootDiv = document.getElementById('root');
@@ -21,4 +21,8 @@
   window.onpopstate = () => {
     rootDiv.innerHTML = routes[window.location.pathname]
   }
+
+window.onload = (event) => {
+  rootDiv.innerHTML = routes[window.location.pathname]
+};
 

@@ -3,19 +3,19 @@
   //Routing
   const routes = {
     '/' : home,
-    '/bodypix' : bodypix
+    '/bodypix/' : bodypix
   };
 
   const rootDiv = document.getElementById('root');
   rootDiv.innerHTML = routes[window.location.pathname];
 
-  const onNavigate = (pathName) => {
+  const onNavigate = (pathname) => {
     window.history.pushState(
       {},
-      pathName,
-      window.location.origin + pathName
+      pathname,
+      window.location.origin + pathname
     )
-    rootDiv.innerHTML = routes[pathName];
+    rootDiv.innerHTML = routes[pathname];
   }
 
   window.onpopstate = () => {

@@ -1,4 +1,7 @@
 const bodypix = `
+<header class="row"> 
+    <div class="menu" onclick="onNavigate('/')">Home</div>
+</header>
 <section id="bodypix" class="bodypix">
     <h1>Tensor Flow Body pix<h1>
     <h2>

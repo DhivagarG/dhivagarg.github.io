@@ -235,3 +235,18 @@ ul {
   overflow-x: auto;
   width: 900px;
 }
+.row{
+  flex-direction: row !important;
+  margin: 0 !important;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgb(0 0 0 / 20%);
+  background: linear-gradient( to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1) );
+}
+.menu{
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+.menu:hover{
+  color: aliceblue;
+}

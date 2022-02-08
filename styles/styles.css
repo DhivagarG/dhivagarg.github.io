@@ -206,7 +206,7 @@ ul {
   }
 }
 
-.project1{
+.bodypix{
     align-items: flex-start;
     float: left;
     margin-top: 40px;
@@ -214,7 +214,7 @@ ul {
     color: black;
     background-color: white;
 }
-.project1 p{
+.bodypix p{
   font-size: 12px;
   font-weight: 300;
 }

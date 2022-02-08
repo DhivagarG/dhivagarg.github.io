@@ -1,5 +1,5 @@
-const project1 = `
-<section id="project1" class="project1">
+const bodypix = `
+<section id="bodypix" class="bodypix">
     <h1>Tensor Flow Body pix<h1>
     <h2>
         BodyPix: Person Segmentation in the Browser with TensorFlow.js using React
@@ -115,3 +115,7 @@ const project1 = `
     </div>
 </div>
 </section>`
+
+window.onpopstate = () => {
+    rootDiv.innerHTML = routes[window.location.pathname]
+  }

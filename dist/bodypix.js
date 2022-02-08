@@ -8,7 +8,7 @@ const bodypix = `
         <p>BodyPix, an open-source machine learning model which allows for person and body-part segmentation in the browser with TensorFlow.js. With default settings, it estimates and renders person and body-part segmentation at 25 fps</p>
     </div>
     <div>
-        <img src="./assets/bpix.gif" width="320" height="240"/>
+        <img src="../assets/bpix.gif" width="320" height="240"/>
     </div>
     <div class="pdT20">
         <p> What exactly is person segmentation? In computer vision, image segmentation refers to the technique of grouping pixels in an image into semantic areas typically to locate objects and boundaries. The BodyPix model is trained to do this for a person and twenty-four body parts (parts such as the left hand, front right lower leg, or back torso). In other words, BodyPix can classify the pixels of an image into two categories: 1) pixels that represent a person and 2) pixels that represent background. It can further classify pixels representing a person into any one of twenty-four body parts.</p>
@@ -77,16 +77,16 @@ const bodypix = `
     <div class="flex pdT20">
         <div>
             <div>Before</div>
-            <div><img src="./assets/before.jpg" height="430px"/></div>
+            <div><img src="../assets/before.jpg" height="430px"/></div>
         </div>
         <div>
             <div>After</div>
-            <div><img src="./assets/after.PNG" height="430px"/></div>
+            <div><img src="../assets/after.PNG" height="430px"/></div>
         </div>
     </div>
     <div class="pdT20">
         <h1>Body Part Segmentation</h1> 
-        <img class="pdT10" src="./assets/bp.png" width="500" height="460"/>
+        <img class="pdT10" src="../assets/bp.png" width="500" height="460"/>
     </div>
     <div class="pdT10">
         <p>We call the API method estimatePartSegmentation to perform body part segmentation on an image or video; this short code block shows how to use it:</p>
@@ -111,7 +111,7 @@ const bodypix = `
     <div class="pdT20">
         <h1>How does it work internally</h1>
         <p class="pdT10">At the core of BodyPix is an algorithm that performs body segmentation — or, in other words, performs a binary decision for each pixel of an input image to estimate whether that pixel belongs to a person or not</p>
-        <img class="pdT10" src="./assets/10.png" width="80%"/>
+        <img class="pdT10" src="../assets/10.png" width="80%"/>
     </div>
 </div>
 </section>`

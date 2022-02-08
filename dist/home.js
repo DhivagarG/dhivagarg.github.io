@@ -70,7 +70,7 @@ const home  = `<header>
 </div>
 <div id="projects">
     <h3>Projects</h3>
-    <li> <a href="#" onclick="onNavigate('/bodypix'); return false;">TensorFlow Body Pix</a></li>
+    <li> <a href="#" onclick="onNavigate('/bodypix/'); return false;">TensorFlow Body Pix</a></li>
 </div>
 </section>`;
 
